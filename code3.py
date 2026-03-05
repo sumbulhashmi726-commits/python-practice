@@ -1,8 +1,8 @@
-a =10
-b = 4.6
-c = "Python"
-d = True
-print(a)
-print(b)
-print(c)
-print(d)
+n = int(input("Enter number of students: "))
+scores = list(map(int, input("Enter scores: ").split()))
+
+highest = max(scores)
+scores.remove(highest)
+runner_up = max(scores)
+
+print("Runner-up score:", runner_up) 
